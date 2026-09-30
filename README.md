@@ -2,6 +2,10 @@
 
 *Say "Alexa, open label maker," then "chicken soup." Your Echo Show previews the label, with an icon and today's date, and reads it back. Say "yes" and it prints on your Zebra printer.*
 
+<img src="docs/images/echo-show-preview.jpg" width="600" alt="Echo Show 15 showing a Chicken Soup label preview with eight icon choices, and the printed label in front of it" />
+
+*The preview on an Echo Show 15, and the label it printed.*
+
 A voice and touch front end for [2-Click Label Maker](https://github.com/raypp2/2click-label-maker-zebra). The default path is three steps: ask, look, say yes. Everything else is optional: tap a different icon, change the text, add secondary text, or ask for more copies before anything prints.
 
 **Supported functions**
