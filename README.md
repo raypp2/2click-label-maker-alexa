@@ -13,6 +13,8 @@ A voice and touch front end for [2-Click Label Maker](https://github.com/raypp2/
 
 ## How it works
 
+The design, decisions and test results are in [docs/requirements.md](docs/requirements.md).
+
 ```mermaid
 flowchart LR
   echo[Echo Show] <--> alexa[Alexa cloud]
