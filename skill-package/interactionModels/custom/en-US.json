@@ -1,0 +1,318 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "label maker",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "PrintLabelIntent",
+          "slots": [
+            {
+              "name": "text",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{text}",
+                "it should say {text}",
+                "say {text}"
+              ]
+            }
+          ],
+          "samples": [
+            "print {text}",
+            "print a label for {text}",
+            "print label for {text}",
+            "make a label for {text}",
+            "make a label saying {text}",
+            "make a new label for {text}",
+            "create a label for {text}",
+            "label {text}",
+            "a label for {text}"
+          ]
+        },
+        {
+          "name": "ConfirmPrintIntent",
+          "slots": [],
+          "samples": [
+            "print",
+            "print it",
+            "print as shown",
+            "print the label",
+            "go ahead",
+            "looks good",
+            "that's right"
+          ]
+        },
+        {
+          "name": "ChangeTextIntent",
+          "slots": [
+            {
+              "name": "text",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{text}",
+                "make it {text}"
+              ]
+            }
+          ],
+          "samples": [
+            "change the text to {text}",
+            "change it to {text}",
+            "make it say {text}",
+            "it should say {text}",
+            "no it should say {text}"
+          ]
+        },
+        {
+          "name": "SetSecondaryTextIntent",
+          "slots": [
+            {
+              "name": "secondary",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{secondary}",
+                "it should say {secondary}"
+              ]
+            }
+          ],
+          "samples": [
+            "add secondary text {secondary}",
+            "add a subtitle {secondary}",
+            "add line {secondary}",
+            "add line saying {secondary}",
+            "add a line saying {secondary}",
+            "add text {secondary}",
+            "second line {secondary}",
+            "secondary text {secondary}",
+            "subtitle {secondary}",
+            "add {secondary} underneath",
+            "put {secondary} underneath",
+            "underneath put {secondary}",
+            "add a note {secondary}",
+            "add note {secondary}",
+            "note {secondary}",
+            "add the note {secondary}",
+            "add description {secondary}",
+            "add details {secondary}",
+            "the second line should say {secondary}",
+            "second line says {secondary}",
+            "add a second line {secondary}",
+            "add a second line saying {secondary}",
+            "make the second line {secondary}",
+            "add the words {secondary}"
+          ]
+        },
+        {
+          "name": "AddSecondaryTextPromptIntent",
+          "slots": [],
+          "samples": [
+            "add secondary text",
+            "add a line",
+            "add another line",
+            "add text",
+            "add a subtitle",
+            "add a note",
+            "add notes",
+            "add details",
+            "add a description",
+            "add a second line",
+            "secondary text",
+            "add a subtitle line",
+            "add more text"
+          ]
+        },
+        {
+          "name": "ClearSecondaryTextIntent",
+          "slots": [],
+          "samples": [
+            "remove the secondary text",
+            "remove the second line",
+            "no secondary text"
+          ]
+        },
+        {
+          "name": "SetIconIntent",
+          "slots": [
+            {
+              "name": "index",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "icon",
+              "type": "IconName"
+            },
+            {
+              "name": "ordinal",
+              "type": "AMAZON.Ordinal"
+            }
+          ],
+          "samples": [
+            "use icon {index}",
+            "icon {index}",
+            "pick icon {index}",
+            "number {index}",
+            "use the {icon} icon",
+            "use the {icon}",
+            "the {icon} icon",
+            "{index}",
+            "option {index}",
+            "select {index}",
+            "choose {index}",
+            "pick {index}",
+            "number {index} please",
+            "I want {index}",
+            "go with {index}",
+            "use {index}",
+            "the {ordinal} one",
+            "the {ordinal} icon",
+            "{ordinal} one",
+            "use the {ordinal} one",
+            "pick the {ordinal} one"
+          ]
+        },
+        {
+          "name": "NextIconIntent",
+          "slots": [],
+          "samples": [
+            "different icon",
+            "pick a different icon",
+            "more icons",
+            "another icon",
+            "change the icon",
+            "change icon",
+            "show me more icons"
+          ]
+        },
+        {
+          "name": "SetCopiesIntent",
+          "slots": [
+            {
+              "name": "count",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{count} copies",
+            "make {count} copies",
+            "print {count} copies",
+            "I need {count}",
+            "{count} labels"
+          ]
+        },
+        {
+          "name": "SetDateIntent",
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "change the date to {date}",
+            "date it {date}",
+            "make the date {date}",
+            "use {date} as the date"
+          ]
+        },
+        {
+          "name": "ClearDateIntent",
+          "slots": [],
+          "samples": [
+            "no date",
+            "remove the date",
+            "without a date"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "IconName",
+          "values": [
+            {
+              "name": {
+                "value": "soup"
+              }
+            },
+            {
+              "name": {
+                "value": "bowl"
+              }
+            },
+            {
+              "name": {
+                "value": "apple"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "PrintLabelIntent",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "text",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "elicitationRequired": false
+            }
+          ]
+        },
+        {
+          "name": "ChangeTextIntent",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "text",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "elicitationRequired": false
+            }
+          ]
+        },
+        {
+          "name": "SetSecondaryTextIntent",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "secondary",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "elicitationRequired": false
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": []
+  }
+}

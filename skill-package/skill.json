@@ -1,0 +1,128 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sslCertificateType": "Trusted",
+          "uri": "https://YOUR-NODE.YOUR-TAILNET.ts.net/alexa"
+        },
+        "interfaces": [
+          {
+            "supportedViewports": [
+              {
+                "maxHeight": 540,
+                "maxWidth": 960,
+                "minHeight": 540,
+                "minWidth": 960,
+                "mode": "TV",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 599,
+                "maxWidth": 599,
+                "minHeight": 100,
+                "minWidth": 100,
+                "mode": "HUB",
+                "shape": "ROUND"
+              },
+              {
+                "maxHeight": 959,
+                "maxWidth": 1279,
+                "minHeight": 600,
+                "minWidth": 960,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 1279,
+                "maxWidth": 1920,
+                "minHeight": 600,
+                "minWidth": 1280,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 599,
+                "maxWidth": 1279,
+                "minHeight": 100,
+                "minWidth": 960,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 1279,
+                "maxWidth": 2560,
+                "minHeight": 960,
+                "minWidth": 1920,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 2560,
+                "maxWidth": 1279,
+                "minHeight": 1920,
+                "minWidth": 960,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 1920,
+                "maxWidth": 959,
+                "minHeight": 320,
+                "minWidth": 600,
+                "mode": "MOBILE",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 1920,
+                "maxWidth": 1279,
+                "minHeight": 320,
+                "minWidth": 960,
+                "mode": "MOBILE",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 1920,
+                "maxWidth": 1920,
+                "minHeight": 320,
+                "minWidth": 1280,
+                "mode": "MOBILE",
+                "shape": "RECTANGLE"
+              }
+            ],
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ],
+        "locales": {}
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-US": {
+          "description": "Say what the label should say. Label Maker shows a preview of the label with an icon and today's date on your Echo Show, reads it back, and prints it on your Zebra label printer when you say yes. Tap a different icon, change the text, add secondary text, or ask for more copies before printing.",
+          "examplePhrases": [
+            "Alexa, open label maker",
+            "Alexa, ask label maker to make a label for chicken soup",
+            "Alexa, tell label maker chicken soup"
+          ],
+          "keywords": [
+            "label",
+            "labels",
+            "label maker",
+            "food label",
+            "zebra",
+            "printer",
+            "leftovers"
+          ],
+          "name": "Label Maker",
+          "summary": "Print food labels on your Zebra label printer with a preview on screen."
+        }
+      },
+      "testingInstructions": "Private skill for printing food labels on a home Zebra printer. Say: open label maker, then chicken soup."
+    }
+  }
+}
